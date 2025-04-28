@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-sm bg-body-tertiary bg-info ">
+    <div class="container-fluid bg-info">
+      <a class="navbar-brand" href="#">DISTRIBUIDORA MAX & DENT S.A.C.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0" >
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" [routerLink]="['/']"
+            routerLink="active" routerLinkActive="{exact:true}">Inicio</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link" aria-current="page" [routerLink]="['nosotros']"
+            routerLink="active" routerLinkActive="{exact:true}">Nosotros</a>
+          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" [routerLink]="['contactamos']"
+              routerLink="active" routerLinkActive="{exact:true}">Te contactamos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" [routerLink]="['catalogo-inicio']"
+              routerLink="active" routerLinkActive="{exact:true}">Nuestros productos</a>
+            </li>
+        
+        </ul>
+        <a class="nav-link text-dark" routerLink="/carrito">
+          <i class="fa fa-shopping-cart"></i> (<span class="fw-bold">{{carritoServices.cantidad()}}</span>)
+        </a>
+      </div>
+    </div>
+  </nav>
+<!-- aca termina el nav bar
+
+aca empiesa los enalses -->
+  <div class="container mt-5 p-5 border border-info-subtle border border-info-subtle">
+    <h2 class="text-center ">Encuentranos tambien en!</h2>
+    <div class="row">
+        <button class="col-sm-3 btn btn-outline-info" type="submit"> <i class="bi bi-facebook"> </i> Faceboock</button>
+        <button class="col-sm-3 btn btn-outline-success" type="submit"> <i class="bi bi-whatsapp"> </i> WhatsApp</button>
+        <button class="col-sm-3 btn btn-outline-info" type="submit"> <i class="bi bi-twitter"> </i> Twitter</button>
+        <button class="col-sm-3 btn btn-outline-danger" type="submit"> <i class="bi bi-instagram"> </i> Instagram</button>
+        
+    </div>
+</div>
